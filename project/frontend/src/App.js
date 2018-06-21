@@ -29,13 +29,12 @@ class App extends Component{
   render() {
     return (
       <div className="App">
-         <Button variant="contained" color="secondary" >
-        Secondary
-      </Button>
+
         <p>
             {this.state.info.map(book=> (
-                <ul key = {book.id}
-                    Name : {book.name}
+                <ul>
+                    <li>key = {book.id}</li>
+                    <li>Name : {book.name}</li>
                 </ul>
             ))}
         </p>
