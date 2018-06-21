@@ -12,8 +12,9 @@ class App extends Component{
         }
     }
     componentDidMount(){
-        this.fetchData();
+       // this.fetchData();
     }
+    /*
     fetchData = () => {
         fetch("http://127.0.0.1:8000/booklist/")
             .then(response => response.json()) //transform the data into JSON
@@ -26,19 +27,22 @@ class App extends Component{
             }))
             .catch(error => console.log(error))
     };
-  render() {
-    return (
-      <div className="App">
-         <Button variant="contained" color="secondary" >
-        Secondary
-      </Button>
-        <p>
+    */
+    /*
+    THIS COMPONENNT SHOULD BE PLACE INSIDE THE RENDER TO  DISPLAY THE DATA FROM THE DJANGO MODEL
+    <p>
             {this.state.info.map(book=> (
-                <ul key = {book.id}
-                    Name : {book.name}
+                <ul>
+                     <li>key = {book.id}</li>
+                     <li>   Name : {book.name}</li>
                 </ul>
             ))}
         </p>
+     */
+  render() {
+    return (
+      <div className="App">
+        <h1>Hello React</h1>
       </div>
     );
   }
